@@ -1,0 +1,7 @@
+#
+# Makefile for the px4fmu-v2_APM configuration
+#
+include $(SKETCHBOOK)/mk/PX4/px4_common.mk
+
+MODULES		+= drivers/boards/sparrow-v10
+MODULES		+= drivers/pwm_input
