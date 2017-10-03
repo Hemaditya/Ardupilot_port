@@ -378,7 +378,7 @@ void AP_BoardConfig::px4_setup_peripherals(void)
     const char *fmu_mode = "mode_rcin";
 #elif defined(CONFIG_ARCH_BOARD_SPARROW_V10)
     const char *fmu_mode = "mode_pwm";
-#elif defined(CONFIG_ARCH_BOARD_SPARROW_V11)
+#elif defined(CONFIG_ARCH_BOARD_AUS_V11)
     const char *fmu_mode = "mode_pwm";
 #else
     const char *fmu_mode = "mode_pwm4";
@@ -515,7 +515,7 @@ void AP_BoardConfig::px4_autodetect(void)
     px4.board_type.set_and_notify(PX4_BOARD_SPV10);
     hal.console->printf("Detected Sparrow V10\n");
 
-#elif defined(CONFIG_ARCH_BOARD_SPARROW_V11)
+#elif defined(CONFIG_ARCH_BOARD_AUS_V11)
     px4.board_type.set_and_notify(PX4_BOARD_SPV11);
     hal.console->printf("Detected Sparrow V11\n");
 #endif

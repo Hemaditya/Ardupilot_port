@@ -441,7 +441,7 @@ void AP_Camera::update_trigger()
     }
 }
 
-#if defined(CONFIG_ARCH_BOARD_SPARROW_V11) || defined(CONFIG_ARCH_BOARD_SPARROW_V11)
+#if defined(CONFIG_ARCH_BOARD_AUS_V11) || defined(CONFIG_ARCH_BOARD_AUS_V11)
 void AP_Camera::switch_on(void){
 	if(_camera_switched_on){
 		return;
@@ -475,4 +475,4 @@ void AP_Camera::switch_off(void){
     }
     _camera_switched_on = false;
 }
-#endif //defined(CONFIG_ARCH_BOARD_SPARROW_V11)
+#endif //defined(CONFIG_ARCH_BOARD_AUS_V11)

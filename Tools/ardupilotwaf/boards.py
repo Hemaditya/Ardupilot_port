@@ -583,7 +583,14 @@ class sparrow_v11(px4):
         self.board_name = 'sparrow-v11'
         self.romfs_exclude(['oreoled.bin'])
         self.with_uavcan = True
-
+class aus_v11(px4):
+    name = 'aus-v11'
+    def __init__(self):
+        super(aus_v11, self).__init__()
+        self.bootloader_name = 'ausv11_bl.bin'
+        self.board_name = 'aus-v11'
+        self.romfs_exclude(['oreoled.bin'])
+        self.with_uavcan = True
 class px4_v4pro(px4):
     name = 'px4-v4pro'
     def __init__(self):
